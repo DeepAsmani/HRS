@@ -24,7 +24,7 @@
                         
                       
                       <label class="form-label" for="form3Example1c">Your Name</label>
-                       <asp:TextBox ID="YourName" runat="server" class="form-control"></asp:TextBox>
+                       <asp:TextBox ID="InputName" runat="server" class="form-control"></asp:TextBox>
                     </div>
                   </div>    
     <!-- Email -->
@@ -34,7 +34,7 @@
                         
                       
                       <label class="form-label" for="form3Example1c">Your Email</label>
-                       <asp:TextBox ID="YourEmail" runat="server" class="form-control" TextMode="Email"></asp:TextBox>
+                       <asp:TextBox ID="InputEmail" runat="server" class="form-control" TextMode="Email"></asp:TextBox>
                     </div>
                   </div>
      <!-- Password -->
@@ -44,7 +44,7 @@
                         
                       
                       <label class="form-label" for="form3Example1c">Enter Password</label>
-                       <asp:TextBox ID="Password" runat="server" class="form-control" TextMode="Password"></asp:TextBox>
+                       <asp:TextBox ID="InputPassword" runat="server" class="form-control" TextMode="Password"></asp:TextBox>
                     </div>
                   </div>
      <!--Conform Password -->
@@ -57,16 +57,9 @@
                        <asp:TextBox ID="ConfirmPassword" runat="server" class="form-control" TextMode="Password"></asp:TextBox>
                     </div>
                   </div>
-     <!-- check box -->
-                  <div class="form-check d-flex justify-content-center mb-5">
-                    &nbsp;<label class="form-check-label" for="form2Example3">
-                        
-                        <asp:CheckBox ID="RegisterationCheckBox" runat="server" /> agree all statements in <a href="#!">Terms of service</a>
-                    </label>
-                  </div>
     <!-- Register btn -->
                   <div class="d-flex justify-content-center mx-4 mb-3 mb-lg-4">
-                      <asp:Button ID="RegistorButton" runat="server" class="btn btn-primary btn-block" Text="Register" />
+                      <asp:Button ID="RegistorButton" OnClick="RegBtn" runat="server" class="btn btn-primary btn-block" Text="Register" />
                   </div>
                      <div>
                         <p class="small fw-bold mt-2 pt-1 mb-0">Already have an account? <a href="SignIn.aspx"

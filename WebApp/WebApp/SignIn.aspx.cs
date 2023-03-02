@@ -6,7 +6,6 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Data.SqlClient;
 using System.Data;
-using WebApp.Main;
 
 namespace WebApp
 {
@@ -19,11 +18,36 @@ namespace WebApp
         protected void LoginCick(object sender, EventArgs e)
         {
             List<String> LoginList = new List<String>();
-            ProcessPart p1 = new ProcessPart();
-            p1.LoginProcess(LoginList);
-            LoginList.Add()
+            LoginList.Add(InputEmail.Text);
+            LoginList.Add(InputPassword.Text);
+            int values = LoginProcess(LoginList);
+            if (values == 1)
+            {
+                InputPassword.Text = "";
+                InputEmail.Text = "";
+            }
+            else
+            {
+                Response.Write("<script>alert('Sign IN Successful....');</script>");
+            }
 
+        }
 
+        public int LoginProcess(List<String> LoginList)
+        {
+            SqlConnection con = new SqlConnection("Data source=DEEPASMANI\\DEEP_ASMANI;Initial Catalog=HRS;Integrated Security=True");
+            con.Open();
+            SqlDataAdapter sda = new SqlDataAdapter("SELECT * FROM Customer WHERE CustomerEmail='" + LoginList[0] + "' AND CustomerPassword ='" + LoginList[1] + "'", con);
+            DataTable dt = new DataTable();
+            sda.Fill(dt);
+            if (dt.Rows.Count == 0)
+            {
+                con.Close();
+                Response.Write("<script>alert('Account Not Availble...');</script>");
+                return 1;
+            }
+            con.Close();
+            return 0;
         }
     }
 }

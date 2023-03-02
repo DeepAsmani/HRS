@@ -157,7 +157,7 @@
     <!-- Services Section End -->
 
     <!-- Home Room Section Begin -->
-    <section class="hp-room-section">
+    <section class="hp-room-section" style="margin-left:20%">
         <div class="container-fluid">
             <div class="hp-room-items">
                 <div class="row">
@@ -190,7 +190,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-6">
+                    <div class="col-lg-3 col-md-6" style="margin-left:2%; margin-right:2%">
                         <div class="hp-room-item set-bg" data-setbg="img/room/room-b2.jpg">
                             <div class="hr-text">
                                 <h3>Premium King Room</h3>

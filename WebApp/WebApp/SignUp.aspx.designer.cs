@@ -15,31 +15,31 @@ namespace WebApp
     {
 
         /// <summary>
-        /// YourName control.
+        /// InputName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox YourName;
+        protected global::System.Web.UI.WebControls.TextBox InputName;
 
         /// <summary>
-        /// YourEmail control.
+        /// InputEmail control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox YourEmail;
+        protected global::System.Web.UI.WebControls.TextBox InputEmail;
 
         /// <summary>
-        /// Password control.
+        /// InputPassword control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Password;
+        protected global::System.Web.UI.WebControls.TextBox InputPassword;
 
         /// <summary>
         /// ConfirmPassword control.
@@ -49,15 +49,6 @@ namespace WebApp
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox ConfirmPassword;
-
-        /// <summary>
-        /// RegisterationCheckBox control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox RegisterationCheckBox;
 
         /// <summary>
         /// RegistorButton control.

@@ -162,7 +162,6 @@
     <Compile Include="Homepage.aspx.designer.cs">
       <DependentUpon>Homepage.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Main\ProcessPart.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Reservation.aspx.cs">
       <DependentUpon>Reservation.aspx</DependentUpon>
