@@ -1,0 +1,100 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Index.Master.cs" Inherits="WebApp.Index" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+   
+
+     <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cabin:400,500,600,700&display=swap" rel="stylesheet">
+    
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="css/elegant-icons.css" type="text/css">
+    <link rel="stylesheet" href="css/flaticon.css" type="text/css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="css/nice-select.css" type="text/css">
+    <link rel="stylesheet" href="css/jquery-ui.min.css" type="text/css">
+    <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
+    <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+
+
+    
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+
+      <div>
+           <nav class="navbar navbar-expand-lg navbar-light bg-light">
+               <a class="navbar-brand" href="#">
+                    <img src="" width="85" height="40" alt=""/>
+               </a>
+           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+           </button>
+
+           <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="Homepage.aspx"> Home </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"> About Us </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"> Terms </a>
+                    </li>
+                </ul>
+
+               <ul class="navbar-nav">
+
+                   <li class="nav-item active">
+                       <asp:LinkButton Class="nav-link" ID="NavBookingBtn" runat="server" >Booking</asp:LinkButton>                                
+                   </li>
+
+                    <li class="nav-item active">
+                       <asp:LinkButton Class="nav-link" ID="NavGallaryBtn" runat="server" >Gallary</asp:LinkButton>                                
+                   </li>
+
+                    <li class="nav-item active">
+                        <a class="nav-link" href="SignIn.aspx"> Login </a>
+                    </li>
+
+                    <li class="nav-item active">
+                        <a class="nav-link" href="SignUp.aspx"> Registration </a>
+                    </li>
+
+                <!--   <li class="nav-item active">
+                       <asp:LinkButton Class="nav-link" ID="LinkButton5" runat="server" >LogOut</asp:LinkButton>                                
+                   </li>
+                   -->  
+               </ul>
+   
+           </div>
+             </nav>
+
+            
+        </div>
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+
+        <footer>
+            <p>© 2023 All Rights Reserved.</p>
+        </footer>
+
+        
+    </form>
+
+</body>
+</html>
